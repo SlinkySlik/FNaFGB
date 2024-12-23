@@ -11,10 +11,12 @@
             }
         </style>
         <script>
-            // Check if the page has been refreshed
-            if (!sessionStorage.getItem('reloaded')) {
-                sessionStorage.setItem('reloaded', 'true'); // Mark it as refreshed
-                location.reload(); // Reload the page
+            // Check if URL contains the 'reloaded' parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            if (!urlParams.has('reloaded')) {
+                // Add 'reloaded' parameter and reload the page
+                urlParams.set('reloaded', 'true');
+                window.location.href = window.location.pathname + '?' + urlParams.toString();
             }
         </script>
     </head>
