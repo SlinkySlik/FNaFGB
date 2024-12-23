@@ -10,6 +10,13 @@
                 padding: 0;
             }
         </style>
+        <script>
+            // Check if the page has been refreshed
+            if (!sessionStorage.getItem('reloaded')) {
+                sessionStorage.setItem('reloaded', 'true'); // Mark it as refreshed
+                location.reload(); // Reload the page
+            }
+        </script>
     </head>
     <body>
         <div style="width:100%;height:100%;max-width:100%">
@@ -23,7 +30,7 @@
             EJS_startOnLoaded = true;
             EJS_pathtodata = "https://cdn.emulatorjs.org/stable/data/";
             EJS_gameUrl = "FNaF 1 PSP.iso";
-            EJS_threads = true
+            EJS_threads = true;
             EJS_defaultOptions = {
                 webgl2Enabled: "enabled"
             }
