@@ -1,3 +1,0 @@
-![1000005687](https://github.com/user-attachments/assets/f06c5ba2-68e5-4c01-a0c4-733407b57bb8) What is this?
-
-This project focuses on emulations of Five Nights at Freddy's (FNAF) by getting Gameboy ROM recreations and running them through a Browser emulator...
