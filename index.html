@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <!--HTML file auto generated using EmulatorJS codehelper-->
@@ -5,6 +6,8 @@
             body, html {
                 margin: 0;
                 padding: 0;
+                height: 100vh;
+                overflow: hidden;
             }
         </style>
     </head>
@@ -21,43 +24,51 @@
             EJS_pathtodata = "https://cdn.emulatorjs.org/stable/data/";
             EJS_gameUrl = "game.bin";
             EJS_biosUrl = "scph5501.bin";
+            
+            // Fixed array syntax and structure for virtual gamepad settings
             EJS_VirtualGamepadSettings = [
-                type: "button",
-                        text: "L",
-                                id: "ll3,
-                                        location: "left
-                                                left: 60,
-                                                        fontSize: 15,
-                                                                block: true,
-                                                                        input_value: L
-             type: "button",
-                     text: "R",
-                             idR"rigrt",
-                                     location: "right",
-                                             left: 60,
-                                                     fontSize: 15,
-                                                             block: true,
-                                                                     input_value: R
-               type"button",
-                       text: "L2",
-                               id: "startL2"
-                                       location: "center",
-                                               left: 60,
-                                                       fontSize: 15,
-                                                               block: true,
-                                                                       input_value: L2                       
-                type: "button",
-                        text: "R2",
-                                id: "staR2r3",
-                                        location: "center",
-                                                left: 60,
-                                                        fontSize: 15,
-                                                                block: true,
-                                                                        input_value: R2                                                                                                                                               
-            ]
+                {
+                    type: "button",
+                    text: "L",
+                    id: "ll3",
+                    location: "left",
+                    left: 60,
+                    fontSize: 15,
+                    block: true,
+                    input_value: "L"
+                },
+                {
+                    type: "button",
+                    text: "R",
+                    id: "right",
+                    location: "right",
+                    left: 60,
+                    fontSize: 15,
+                    block: true,
+                    input_value: "R"
+                },
+                {
+                    type: "button",
+                    text: "L2",
+                    id: "startL2",
+                    location: "center",
+                    left: 60,
+                    fontSize: 15,
+                    block: true,
+                    input_value: "L2"
+                },
+                {
+                    type: "button",
+                    text: "R2",
+                    id: "staR2r3",
+                    location: "center",
+                    left: 60,
+                    fontSize: 15,
+                    block: true,
+                    input_value: "R2"
+                }
+            ];
         </script>
         <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
-    </body>
-</html>ipt src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
     </body>
 </html>
