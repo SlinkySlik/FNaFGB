@@ -1,6 +1,17 @@
 <html>
     <head>
         <!--HTML file auto generated using EmulatorJS codehelper-->
+        <script>
+            window.coi = {
+                shouldRegister: () => !reloadedBySelf,
+                shouldDeregister: () => false,
+                coepCredentialless: () => true,
+                coepDegrade: () => true,
+                doReload: () => window.location.reload(),
+                quiet: false
+            }
+        </script>
+        <script src="coi-serviceworker.js"></script>
         <style>
             body, html {
                 margin: 0;
