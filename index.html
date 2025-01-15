@@ -1,6 +1,10 @@
 <html>
     <head>
         <!--HTML file auto generated using EmulatorJS codehelper-->
+        <!-- Add these meta tags for cross-origin isolation -->
+        <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
+        <meta http-equiv="Cross-Origin-Embedder-Policy" content="require-corp">
+        
         <script>
             window.coi = {
                 shouldRegister: () => !reloadedBySelf,
@@ -24,6 +28,7 @@
             <div id="game"></div>
         </div>
         <script>
+            // Add crossorigin attribute to ensure proper loading
             EJS_player = "#game";
             EJS_core = "psp";
             EJS_gameName = "Fnaf1";
@@ -33,6 +38,6 @@
             EJS_gameUrl = "FNaF 1 PSP.iso";
             EJS_biosUrl = "scph5501.bin";
         </script>
-        <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
+        <script src="https://cdn.emulatorjs.org/stable/data/loader.js" crossorigin="anonymous"></script>
     </body>
 </html>
