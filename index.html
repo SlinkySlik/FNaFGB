@@ -1,21 +1,6 @@
 <html>
     <head>
         <!--HTML file auto generated using EmulatorJS codehelper-->
-        <!-- Add these meta tags for cross-origin isolation -->
-        <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
-        <meta http-equiv="Cross-Origin-Embedder-Policy" content="require-corp">
-        
-        <script>
-            window.coi = {
-                shouldRegister: () => !reloadedBySelf,
-                shouldDeregister: () => false,
-                coepCredentialless: () => true,
-                coepDegrade: () => true,
-                doReload: () => window.location.reload(),
-                quiet: false
-            }
-        </script>
-        <script src="coi-serviceworker.js"></script>
         <style>
             body, html {
                 margin: 0;
@@ -28,8 +13,8 @@
             <div id="game"></div>
         </div>
         <script>
-            // Add crossorigin attribute to ensure proper loading
             EJS_player = "#game";
+            EJS_core = "gb;
             EJS_core = "gb";
             EJS_gameName = "Fnaf1";
             EJS_color = "#0064ff";
@@ -37,8 +22,7 @@
             EJS_pathtodata = "https://cdn.emulatorjs.org/stable/data/";
             EJS_gameUrl = "game.gb";
             EJS_biosUrl = "gb_bios.bin";
-            EJS_threads = true;
         </script>
-        <script src="https://cdn.emulatorjs.org/stable/data/loader.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
     </body>
 </html>
